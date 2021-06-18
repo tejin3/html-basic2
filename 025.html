@@ -113,6 +113,75 @@
         <!-- 오픈소스. 자기 코드 사용하는 사람이 많으면 많을 수록 자신의 가치가 올라간다. -->
         <!-- 오픈소스. 하나는 잘 작동하는데 여러개 쓰다보면 다른사람이 만든것이라 서로 충돌이 일어 날 수 있다.무겁다.느리다. -->
         <!-- 바닐라JS. 무분별하게 쓰니까 느려지고 힘들다. 오픈소스 쓰지말고 자기가 만들어서 쓰자 -->
+        <br>
+        <!-- value 내가 입력한 값,속성이 저장되는것 -->
+        <!-- 텍스트 자체로 데이터베이스에 저장되는게 아니라 서울 - 02 , 대한민국 kr 이 저장되야 한다 
+            체크값도 선택하면 value값이 서버로 넘어간다.-->
+        <!-- 기본적으로 value값이 다 있다. -->
+        <!-- value="http://naver.com" readonly  수정은 못하고 읽게만 하겠다.-->
+        <input type="text" name="" id="" value="장태진" readonly>
+        <br>
+        <!-- 인풋 타입 안에 값이 있으면 벨류 값으로 쓸 수 있다. -->
+        <!-- 텍스트는 벨류값으로 쓰기 어려움 -->
+        <input type="hidden" name="" value="a">
+        <!-- 화면에는 안보이는데 내가 쓰고싶은것이 있을 때 -->
+        <br>
+        <label for="">이메일</label>
+        <input type="email" name="" id="" placeholder="abc@ddd.com 형식으로 입력하세요">
+        <!-- 흐릿하게 보이고. 다른 입력값이 입력되면 사라짐. 가이드를 보여줌. -->
+        <!-- 밖에 써도 되지만 공간을 효율적으로 사용하기 위할때나 등등 사용 -->
+        <br>
+        <label for="">오토포커스</label>
+        <input type="email" name="" id="" autofocus>
+        <!-- 커서가 들어가있다. -->
+        <br>
+        <label for="">오토컴플리트 온</label>
+        <input type="email" name="" id="" aria-autocomplete="on">
+        <!-- 예전 입력값을 저장 -->
+        <!-- 다시 입력할때 보여줌 -->
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- 여러줄 입력 -->
+        <!-- rows 몇 줄 rows="10" 10줄-->
+        <!-- cols 30 , 30글자(영문) -->
+        <!-- cols 말고 style="width:100;" 주로 사용-->
+        <br>
+        <fieldset>
+            <legend>개인정보:</legend>
+            <!-- 대표 그룹명 -->
+            <label for="fname">이름:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="tel">연락처:</label>
+            <input type="text" id="tel" name="tel"><br><br>
+            <input type="submit" value="저장">
+
+        </fieldset>
+
+        <br>
+
+        <input list="contry" id="contry1">
+
+        <datalist id="contry">
+            <option value="fgh">
+            <option value="fghf">
+            <option value="gggg">
+            <option value="sssss">
+            <option value="hdfg">
+            <option value="hdffdg">
+
+        </datalist>
+        <!-- 셀렉트 박스는 선택만 가능 -->
+        <!-- 데이타리스트는 선택가능하고 쓸수도 있다,. -->
+        <!-- 리스트 하나만 만들어두고 여러개 쓸 수 있다. -->
+        <br>
+        <input list="contry" id="contry2">
+        <br>
+        <input list="contry" id="contry3">
+        <br>
+
+        <!-- 어떤 요소를 사용해서 효과적으로 구현 할 수 있을지 고민해봐야 한다. 또는 어떤 용도로 사용할지를  고려해서 사용 -->
+
+
 
 
     </form>

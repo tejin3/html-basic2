@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>문제. 다음과 같은 입력 폼을 만드세요</h1>
+    <br>
+    <p style="background-color: blue; color: white; width: 60%;">사용자 정보입력</p>
+    <p>안녕하세요. 태진이의 홈페이지를 자유롭게 이용하려면 회원가입을 하셔야합니다.<br>
+        아래의 사항들을 빠짐없이 기록해주세요.</p>
+    <br>
+
+    <table style="width: 60%;">
+
+        <tr>
+            <th style="border: 3px solid; color: black; background-color: pink;">사용자 ID</th>
+            <td colspan="3" style="border: 3px solid;">
+                <input type="text" name="user_nic_name" id="">
+                <button>ID중복확인</button>
+            </td>
+
+        </tr>
+        <tr>
+            <th style="border: 3px solid; background-color: pink;">비밀번호</th>
+            <td style="border: 3px solid;">
+                <input type="password" name="user_nub" id="">
+            </td>
+            <th style="border: 3px solid; background-color: pink;">비밀번호 확인</th>
+            <td style="border: 3px solid;">
+                <input type="password" name="user_nub_re" id="">
+            </td>
+        </tr>
+        <tr>
+            <th style="border: 3px solid; color: black; background-color: pink;">사용자 이름</th>
+            <td colspan="3" style="border: 3px solid;">
+                <input type="text" name="user_name" id="">
+            </td>
+        </tr>
+        <tr>
+            <th style="border: 3px solid; color: black; background-color: pink;">주민등록번호</th>
+            <td colspan="3" style="border: 3px solid;">
+                <input type="number" name="code1" id="">
+                <label for="">-</label>
+                <input type="number" name="code2" id="">
+        </tr>
+        <tr>
+            <th style="border: 3px solid; background-color: pink;">생년월일</th>
+            <td style="border: 3px solid;">
+                <input type="number" name="bir" id="">
+            </td>
+            <th style="border: 3px solid; background-color: pink;">성별</th>
+            <td style="border: 3px solid;">
+                <input type="radio" name="mf" id="">
+                <label for="">남자</label>
+                <input type="radio" name="mf" id="">
+                <label for="">여자</label>
+            </td>
+        </tr>
+        <tr>
+            <th style="border: 3px solid; color: black; background-color: pink;">우편번호</th>
+            <td colspan="3" style="border: 3px solid;">
+                <input type="number" name="ad1" id="">
+                <label for="">-</label>
+                <input type="number" name="ad2" id="">
+                <button>우편번호검색</button>
+        </tr>
+        <tr>
+            <th style="border: 3px solid; color: black; background-color: pink;">주소</th>
+            <td colspan="3" style="border: 3px solid;">
+                <input type="text" name="realaddress" id="" style="width: 80%;">
+            </td>
+        </tr>
+        <tr>
+            <th style="border: 3px solid; color: black; background-color: pink;">나머지주소</th>
+            <td colspan="3" style="border: 3px solid;">
+                <input type="text" name="ad_end" id="" style="width: 40%;">
+            </td>
+        </tr>
+        <tr>
+            <th style="border: 3px solid; color: black; background-color: pink;">E-Mail</th>
+            <td colspan="3" style="border: 3px solid;">
+                <input type="text" name="email" id="">
+                <label for="">@</label>
+                <select name="" id="">
+                    <option value="">선택해주세요</option>
+                    <option value="">naver.com</option>
+                    <option value="">nate.com</option>
+                    <option value="">gmail.com</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th style="border: 3px solid; color: black; background-color: pink;">직업</th>
+            <td colspan="3" style="border: 3px solid;">
+
+                <select name="" id="">
+                    <option value="">컴퓨터/정보통신</option>
+                    <option value="">가수</option>
+                    <option value="">it</option>
+                    <option value="">기획</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="border: 3px solid; color: black; text-align: center;">
+                <button style="border: 1px solid; color: blue;"><span style="color: black;">등록</span></button>
+                <button>취소</button>
+            </td>
+
+        </tr>
+
+
+
+    </table>
+
+
+</body>
+
+</html>
