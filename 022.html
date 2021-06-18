@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        /* 테이블의 th. td를 찾아서 적용 */
+
+        /* 같은것을 위에 정의 아래에 정의 >> 아래것 적용 */
+        /* 색 바꾸는것 해보자 한번에 */
+
+        tr>td:nth-child(1) {
+            text-align: center;
+        }
+
+        /* 티알 찾은 다음에  */
+
+        tr>td:nth-child(2) {
+            text-align: center;
+        }
+
+        tr>td:nth-child(3) {
+            text-align: right;
+        }
+
+        tr>td:nth-child(4) {
+            text-align: right;
+        }
+
+        tr>td:nth-child(5) {
+            text-align: right;
+        }
+
+        tr>td:nth-child(6) {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>문제. 열차 시간표를 만드세요.</h1>
+    <br>
+    <table style="width: 100%">
+        <tr>
+            <th rowspan="3">출발역</th>
+            <th rowspan="3">도착역</th>
+            <th colspan="2" rowspan="2" style="border: 1px solid; background-color: aquamarine;">현재운임</th>
+
+            <th colspan="2" rowspan="2" style="border: 1px solid; background-color: rosybrown">2022년 중앙선 전 구간 개통
+                시<br>
+                청량리~서원주 구간 '준고속 서비스'
+            </th>
+
+        </tr>
+        <tr>
+
+
+
+        </tr>
+        <tr>
+
+            <th style="border: 1px solid; background-color: aquamarine;">일반실(A)</th>
+            <th style="border: 1px solid; background-color: aquamarine;">우등실</th>
+            <th style="border: 1px solid; background-color: rosybrown">일반실(B)</th>
+            <th style="border: 1px solid; background-color: rosybrown">우등실</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid;">청량리</td>
+            <td style="border: 1px solid;">원주</td>
+            <td style="border: 1px solid; background-color: aquamarine;">10,100</td>
+            <td style="border: 1px solid; background-color: aquamarine;">13,100</td>
+            <td style="border: 1px solid; background-color: rosybrown">13,300</td>
+            <td style="border: 1px solid; background-color: rosybrown">16,300</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid;">양평</td>
+            <td style="border: 1px solid;">원주</td>
+            <td style="border: 1px solid; background-color: aquamarine;">8,400</td>
+            <td style="border: 1px solid; background-color: aquamarine;">11,400</td>
+            <td style="border: 1px solid; background-color: rosybrown">8,400</td>
+            <td style="border: 1px solid; background-color: rosybrown">11,400
+        </tr>
+        <tr>
+            <td style="border: 1px solid;">원주</td>
+            <td style="border: 1px solid;">제천</td>
+            <td style="border: 1px solid; background-color: aquamarine;">8,400</td>
+            <td style="border: 1px solid; background-color: aquamarine;">11,400</td>
+            <td style="border: 1px solid; background-color: rosybrown">8,400</td>
+            <td style="border: 1px solid; background-color: rosybrown">11,400</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid;">원주</td>
+            <td style="border: 1px solid;">단양</td>
+            <td style="border: 1px solid; background-color: aquamarine;">8,400</td>
+            <td style="border: 1px solid; background-color: aquamarine;">11,400</td>
+            <td style="border: 1px solid; background-color: rosybrown">8,400</td>
+            <td style="border: 1px solid; background-color: rosybrown">11,400</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid;">원주</td>
+            <td style="border: 1px solid;">풍기</td>
+            <td style="border: 1px solid; background-color: aquamarine;">10,400</td>
+            <td style="border: 1px solid; background-color: aquamarine;">13,400</td>
+            <td style="border: 1px solid; background-color: rosybrown">10,400</td>
+            <td style="border: 1px solid; background-color: rosybrown">13,400</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid;">원주</td>
+            <td style="border: 1px solid;">영주</td>
+            <td style="border: 1px solid; background-color: aquamarine;">11,700</td>
+            <td style="border: 1px solid; background-color: aquamarine;">14,700</td>
+            <td style="border: 1px solid; background-color: rosybrown">11,700</td>
+            <td style="border: 1px solid; background-color: rosybrown">14,700</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid;">원주</td>
+            <td style="border: 1px solid;">안동</td>
+            <td style="border: 1px solid; background-color: aquamarine;">14,900</td>
+            <td style="border: 1px solid; background-color: aquamarine;">17,900</td>
+            <td style="border: 1px solid; background-color: rosybrown">14,900</td>
+            <td style="border: 1px solid; background-color: rosybrown">17,900</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+<!-- tr:nth-child(odd)>td {}  짝수행만 찾아라. 찾은 다음에 그 아래에 있는 td를 다 찾아라. -->
+<!-- tr:nth-child(even)>td {}  홀수행만 찾아라. 찾은 다음에 그 아래에 있는 td를 다 찾아라. -->
+<!-- tr>td:nth-child(2) {}  티알 찾아라. 찾은 다음에 그 아래에 있는 티디 에서 2번째 찾아라. -->
+<!-- tr:nth-child(2)>th:nth-child(1) 병합되어 있으면 코딩상 다음 행이1번-->
